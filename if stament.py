@@ -66,28 +66,32 @@ else:
 
 
 #bank account:
-pin=1234
+pin=0
 amount=1000
-p=int(input("Enter pin :"))
-if (p==pin):
-    option=int(input("""choose the option:
+while(True):
+    
+    
+    pin=int(input("Enter pin :"))
+    if (pin==1234):
+        option=int(input("""choose the option:
           1.check balance
           2.cash withdrwal
-          3.deposit money"""   :))
-    if(option == 1):
-        print ("your balance in bank is:" + str(amount))
-    elif(option == 2):
-        withdrwa =int(input("Enter the amout  :"))
-        amount=(amount - withdrwa)
-        print("your balance is  :" + str(amount))
-    elif(option == 3):
-        deposit =int(input("Enter the amout  :"))
-        amount=(amount + deposit)
-        print("your balance is  :" + str(amount))
+          3.deposit money:  """   ))
+        if(option == 1):
+            print ("your balance in bank is:" + str(amount))
+        elif(option == 2):
+            withdrwa =int(input("Enter the amout  :"))
+            amount=(amount - withdrwa)
+            print("your balance is  :" + str(amount))
+        elif(option == 3):
+            deposit =int(input("Enter the amout  :"))
+            amount=(amount + deposit)
+            print("your balance is  :" + str(amount))
 
 
 else:
     print("Enter correct pin")
+        
 
 
 #self study:
