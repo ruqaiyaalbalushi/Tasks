@@ -1,4 +1,5 @@
 
+
 #practic loop:
 #Q2:
 """for i in range (1,6):
@@ -31,21 +32,24 @@ print(count)"""
 
 #Q3:
 #checking the perfect number:
-"""sum = 0
+sum1 = 0
 
-for n in range(1,101) :
+for num in range(1,101) :
     
-    for i in range(1, n):
-        if n%i == 0:
-            sum += i
+    for i in range(1, num):
+        if num%i == 0:
+            
+            sum1+= i
 
-    if n == sum:
-        print(f"{n} is a Perfect number")
-    else:
-        print(f"{n} is not a Perfect number");"""
+    if(sum1 == num):
+        print(f"{num} is a Perfect number")
+    sum1=0
+    #else:
+        #print(f"{num} is not a Perfect number")
+        
     
 
-n=input("Enter your number")
+"""n=input("Enter your number")
 v = len(n)==14
 p=0
 while v and p < len(n):
@@ -58,7 +62,7 @@ while v and p < len(n):
 if v :
     print(n,"number is valid")
 else:
-    print("number is not valid")
+    print("number is not valid")"""
     
     
     
