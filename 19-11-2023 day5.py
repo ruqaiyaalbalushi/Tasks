@@ -31,19 +31,18 @@ print(count)
 
 
 #Q3:
-#checking the perfect number:
-sum = 0
+sum1 = 0
 
-for n in range(1,101) :
+for num in range(1,101) :
     
-    for i in range(1, n):
-        if n%i == 0:
-            sum += i
+    for i in range(1, num):
+        if num%i == 0:
+            
+            sum1+= i
 
-    if n == sum:
-        print(f"{n} is a Perfect number")
-    else:
-        print(f"{n} is not a Perfect number")
+    if(sum1 == num):
+        print(f"{num} is a Perfect number")
+    sum1=0
     
 #checking the format of valid number
 =input("Enter your number in format +123 1234-1234")      
